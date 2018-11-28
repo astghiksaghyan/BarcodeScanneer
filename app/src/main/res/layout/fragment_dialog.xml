@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/massage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/no_radius"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_left_button_bg"
+            android:paddingTop="@dimen/padding_button"
+            android:paddingBottom="@dimen/padding_button"
+            android:text="@string/copy"
+            android:textColor="@color/ios_dialog_button_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/but_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/no_radius"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_right_button_bg"
+            android:paddingTop="@dimen/padding_button"
+            android:paddingBottom="@dimen/padding_button"
+            android:text="@string/cancel"
+            android:textColor="@color/ios_dialog_button_text" />
+    </LinearLayout>
+
+</LinearLayout>
